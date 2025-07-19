@@ -23,7 +23,7 @@ public class 좌석그리기 extends JFrame {
 	}
 
 	public static void main(String[] args) {
-		SwingUtilities.invokeLater(()->{new 좌석그리기();});
+		SwingUtilities.invokeLater(좌석그리기::new);
 	}
 	
 	class SeatLabel extends JLabel {

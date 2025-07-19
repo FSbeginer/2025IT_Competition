@@ -99,8 +99,6 @@ public class 배송정보 extends JFrame {
 	}
 
 	public static void main(String[] args) {
-		SwingUtilities.invokeLater(() -> {
-			new 배송정보();
-		});
+		SwingUtilities.invokeLater(배송정보::new);
 	}
 }

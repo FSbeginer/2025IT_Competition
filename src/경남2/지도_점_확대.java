@@ -103,6 +103,6 @@ public class 지도_점_확대 extends JFrame {
 	}
 
 	public static void main(String[] args) {
-		SwingUtilities.invokeLater(()->{new 지도_점_확대();});
+		SwingUtilities.invokeLater(지도_점_확대::new);
 	}
 }

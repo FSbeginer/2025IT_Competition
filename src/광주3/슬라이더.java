@@ -63,6 +63,6 @@ public class 슬라이더 extends JFrame {
 	}
 
 	public static void main(String[] args) {
-		SwingUtilities.invokeLater(()->{new 슬라이더();});
+		SwingUtilities.invokeLater(슬라이더::new);
 	}
 }

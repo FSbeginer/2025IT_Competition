@@ -17,7 +17,7 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.SwingUtilities;
 
-public class 도넛차트_ing extends JFrame {
+public class 도넛차트_완벽구현 extends JFrame {
 	
 	JComboBox jcb;
 	double[] data = new double[5];
@@ -27,7 +27,7 @@ public class 도넛차트_ing extends JFrame {
 	JPanel namePanel;
 	
 	
-	public 도넛차트_ing() {
+	public 도넛차트_완벽구현() {
 		ui();
 		analyzePanel();
 		getData(sql[0]);
@@ -61,7 +61,7 @@ public class 도넛차트_ing extends JFrame {
 				int ang = 90;
 				for (int i = 0; i < 5; i++) {
 					g2d.setColor(c[i]); 
-					g2d.fillArc(0, 0, 500, 500, ang, -(int)data[i]);
+					g2d.fillArc(0+50, 0, 500, 500, ang, -(int)data[i]);
 					ang -= data[i];
 				}
 				
@@ -69,18 +69,21 @@ public class 도넛차트_ing extends JFrame {
 				ang = 90;
 				for (int i = 0; i < 5; i++) {
 					String percent = String.format("%.1f%%", data[i]/360 * 100);
-					g2d.rotate(-Math.toRadians(ang-data[i]/2), 250, 250);
-					g2d.rotate(Math.toRadians(ang-data[i]/2), 500-fm.stringWidth(percent)/2, 250);
+					int sx = 500-fm.stringWidth(percent)/2+50;
+					int sy = 250 + fm.getHeight()/2;
+					
+					g2d.rotate(-Math.toRadians(ang-data[i]/2), 250+50, 250);
+					g2d.rotate(Math.toRadians(ang-data[i]/2), 500+50, 250);
 					
 					g2d.setColor(Color.black);
-					g2d.drawString(percent, 500-fm.stringWidth(percent)/2, 250);
+					g2d.drawString(percent, sx, sy);
 					
 					g2d.setTransform(ori);
 					ang -= data[i];
 				}
 				
 				g2d.setColor(Color.white);
-				g2d.fillOval(85, 85, 330, 330);
+				g2d.fillOval(85+50, 85, 330, 330);
 			}
 		};
 		add(jp);
@@ -106,6 +109,6 @@ public class 도넛차트_ing extends JFrame {
 	}
 
 	public static void main(String[] args) {
-		SwingUtilities.invokeLater(()->{new 도넛차트_ing();});
+		SwingUtilities.invokeLater(도넛차트_완벽구현::new);
 	}
 }

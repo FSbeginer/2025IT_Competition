@@ -43,6 +43,6 @@ public class 이미지파일_색상변경 extends JFrame {
 	}
 
 	public static void main(String[] args) {
-		SwingUtilities.invokeLater(()->{new 이미지파일_색상변경();});
+		SwingUtilities.invokeLater(이미지파일_색상변경::new);
 	}
 }

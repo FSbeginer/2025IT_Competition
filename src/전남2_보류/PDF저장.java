@@ -77,8 +77,6 @@ public class PDF저장 extends JFrame {
 	}
 
 	public static void main(String[] args) {
-		SwingUtilities.invokeLater(() -> {
-			new PDF저장();
-		});
+		SwingUtilities.invokeLater(PDF저장::new);
 	}
 }

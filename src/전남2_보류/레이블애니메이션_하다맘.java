@@ -56,6 +56,6 @@ public class 레이블애니메이션_하다맘 extends JFrame {
 	}
 
 	public static void main(String[] args) {
-		SwingUtilities.invokeLater(() -> {new 레이블애니메이션_하다맘();});
+		SwingUtilities.invokeLater(레이블애니메이션_하다맘::new);
 	}
 }

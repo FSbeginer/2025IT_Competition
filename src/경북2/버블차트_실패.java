@@ -123,7 +123,7 @@ public class 버블차트_실패 extends JFrame{
 
 
 	public static void main(String[] args) {
-		SwingUtilities.invokeLater(()->{new 버블차트_실패();});
+		SwingUtilities.invokeLater(버블차트_실패::new);
 	}
 	
 	class Bubble extends Ellipse2D.Double {

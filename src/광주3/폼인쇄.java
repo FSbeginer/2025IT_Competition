@@ -52,6 +52,6 @@ public class 폼인쇄 extends JFrame {
 	}
 
 	public static void main(String[] args) {
-		SwingUtilities.invokeLater(()->{new 폼인쇄();});
+		SwingUtilities.invokeLater(폼인쇄::new);
 	}
 }

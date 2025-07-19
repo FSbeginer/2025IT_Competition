@@ -148,7 +148,7 @@ public class 버블차트2 extends JFrame {
 
 
 	public static void main(String[] args) {
-		SwingUtilities.invokeLater(()->{new 버블차트2();});
+		SwingUtilities.invokeLater(버블차트2::new);
 	}
 	
 	class Bubble extends Ellipse2D.Double {
