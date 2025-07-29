@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C85A6829-C7CC-47A3-9FFC-B29E9C649B51}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>WindowsFormsApp1</RootNamespace>
+    <AssemblyName>부산_1과제</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>게시\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>5</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controls\DayLabel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\DayLabel.Designer.cs">
+      <DependentUpon>DayLabel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\RouteMap.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\RouteMap.Designer.cs">
+      <DependentUpon>RouteMap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\SeatControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\SeatControl.Designer.cs">
+      <DependentUpon>SeatControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Division.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Information.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Model1.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Model1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Model1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Reservation.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Station.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\User.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="View\Analysis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Analysis.Designer.cs">
+      <DependentUpon>Analysis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Calendar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Calendar.Designer.cs">
+      <DependentUpon>Calendar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\KeyPad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\KeyPad.Designer.cs">
+      <DependentUpon>KeyPad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Payment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Payment.Designer.cs">
+      <DependentUpon>Payment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Reservation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Reservation.Designer.cs">
+      <DependentUpon>Reservation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ScheduleList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ScheduleList.Designer.cs">
+      <DependentUpon>ScheduleList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\SeatSelection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\SeatSelection.Designer.cs">
+      <DependentUpon>SeatSelection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ShowRoute.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ShowRoute.Designer.cs">
+      <DependentUpon>ShowRoute.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_GIF일시정지\GIF_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_GIF일시정지\GIF_Form.Designer.cs">
+      <DependentUpon>GIF_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Templete\BC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Templete\BC.Designer.cs">
+      <DependentUpon>BC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Templete\BF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Templete\BF.Designer.cs">
+      <DependentUpon>BF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\RouteSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\RouteSearch.Designer.cs">
+      <DependentUpon>RouteSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\TicketCertify.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\TicketCertify.Designer.cs">
+      <DependentUpon>TicketCertify.cs</DependentUpon>
+    </Compile>
+    <Compile Include="__테스트폼\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="__테스트폼\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_인증폼_검정선\CancelLine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_인증폼_검정선\CancelLine.Designer.cs">
+      <DependentUpon>CancelLine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_지도그리기_점연결\맵.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="_지도그리기_점연결\맵.Designer.cs">
+      <DependentUpon>맵.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_지도그리기_점연결\지도.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_지도그리기_점연결\지도.Designer.cs">
+      <DependentUpon>지도.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_차트애니메이션\차트애니메이션.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_차트애니메이션\차트애니메이션.Designer.cs">
+      <DependentUpon>차트애니메이션.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Controls\DayLabel.resx">
+      <DependentUpon>DayLabel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\RouteMap.resx">
+      <DependentUpon>RouteMap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\SeatControl.resx">
+      <DependentUpon>SeatControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Analysis.resx">
+      <DependentUpon>Analysis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Calendar.resx">
+      <DependentUpon>Calendar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\KeyPad.resx">
+      <DependentUpon>KeyPad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Payment.resx">
+      <DependentUpon>Payment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Reservation.resx">
+      <DependentUpon>Reservation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ScheduleList.resx">
+      <DependentUpon>ScheduleList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\SeatSelection.resx">
+      <DependentUpon>SeatSelection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ShowRoute.resx">
+      <DependentUpon>ShowRoute.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_GIF일시정지\GIF_Form.resx">
+      <DependentUpon>GIF_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Templete\BC.resx">
+      <DependentUpon>BC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templete\BF.resx">
+      <DependentUpon>BF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\RouteSearch.resx">
+      <DependentUpon>RouteSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\TicketCertify.resx">
+      <DependentUpon>TicketCertify.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="__테스트폼\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_인증폼_검정선\CancelLine.resx">
+      <DependentUpon>CancelLine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_지도그리기_점연결\맵.resx">
+      <DependentUpon>맵.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_지도그리기_점연결\지도.resx">
+      <DependentUpon>지도.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_차트애니메이션\차트애니메이션.resx">
+      <DependentUpon>차트애니메이션.cs</DependentUpon>
+    </EmbeddedResource>
+    <EntityDeploy Include="Model\Model1.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Model1.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Model\Model1.edmx.diagram">
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\datafiles\seat2.jpg" />
+    <None Include="bin\Debug\datafiles\seat1.jpg" />
+    <None Include="bin\Debug\datafiles\seat0.jpg" />
+    <None Include="bin\Debug\datafiles\refresh.jpg" />
+    <None Include="bin\Debug\datafiles\qrcode.jpg" />
+    <None Include="bin\Debug\datafiles\map.jpg" />
+    <None Include="bin\Debug\datafiles\logo.png" />
+    <None Include="bin\Debug\datafiles\delete.jpg" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2%28x86 및 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Model\Model1.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Model1.Context.cs</LastGenOutput>
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </Content>
+    <Content Include="Model\Model1.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

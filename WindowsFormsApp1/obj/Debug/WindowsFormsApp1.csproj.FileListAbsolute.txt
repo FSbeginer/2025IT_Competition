@@ -1,0 +1,15 @@
+E:\---2025전국대회 풀이본\부산\1과제\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\EntityFramework.dll
+E:\---2025전국대회 풀이본\부산\1과제\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\EntityFramework.xml
+E:\---2025전국대회 풀이본\부산\1과제\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.AssemblyReference.cache
+E:\---2025전국대회 풀이본\부산\1과제\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+E:\---2025전국대회 풀이본\부산\1과제\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+E:\---2025전국대회 풀이본\부산\1과제\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+E:\---2025전국대회 풀이본\부산\1과제\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsF.A1EEDF9B.Up2Date
+E:\---2025전국대회 풀이본\부산\1과제\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Templete.BF.resources
+E:\---2025전국대회 풀이본\부산\1과제\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.MainForm.resources
+E:\---2025전국대회 풀이본\부산\1과제\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\부산_1과제.exe.config
+E:\---2025전국대회 풀이본\부산\1과제\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\부산_1과제.exe
+E:\---2025전국대회 풀이본\부산\1과제\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\부산_1과제.pdb
+E:\---2025전국대회 풀이본\부산\1과제\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\부산_1과제.exe
+E:\---2025전국대회 풀이본\부산\1과제\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\부산_1과제.pdb
+E:\---2025전국대회 풀이본\부산\1과제\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\부산_1과제.exe.config
